@@ -44,11 +44,11 @@ public class ArtistTest {
     assertTrue(Artist.find(999) == null);
   }
 
-  @Test
-  public void clear_selectedArtist(){
-    Artist myArtist = new Artist("Prince");
-    Artist.remove(1);
-    assertEquals(Artist.all().size(), 0);
-  }
+  // @Test
+  // public void clear_selectedArtist(){
+  //   Artist myArtist = new Artist("Prince");
+  //   Artist.remove(1);
+  //   assertEquals(Artist.all().size(), 0);
+  // }
 
 }
