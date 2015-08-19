@@ -31,4 +31,13 @@ public class Artist {
     }
   }
 
+  public static ArrayList<Artist> remove(int id) {
+    playlist.remove(id-1);
+    return playlist;
+    }
+
+    public static void clear() {
+    playlist.clear();
+    }
+
 }

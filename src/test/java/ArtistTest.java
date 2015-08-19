@@ -41,14 +41,14 @@ public class ArtistTest {
 
   @Test
   public void find_returnsNullWhenNoArtistFound_null() {
-    assertTrue(Task.find(999) == null);
+    assertTrue(Artist.find(999) == null);
   }
 
-  // @Test
-  // public void clear_selectedArtist(){
-  //   Artist myArtist = new Artist("Prince");
-  //   Artist.clear();
-  //   assertEquals(Artist.)
-  // }
+  @Test
+  public void clear_selectedArtist(){
+    Artist myArtist = new Artist("Prince");
+    Artist.remove(1);
+    assertEquals(Artist.all().size(), 0);
+  }
 
 }
